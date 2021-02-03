@@ -10,23 +10,41 @@
             height: 660px;
             background-position: 0 0;
         }
+        #score {
+            margin: 100px;
+            font-size: 100px;
+            font-weight: 900;
+        }
+        #statistics {
+            margin: 10px;
+        }
         button {
             width: 100px;
             height: 40px;
             font-size: 20px;
             margin: 10px;
         }
+        body {
+            display: inline-flex;
+        }
     </style>
 </head>
 <body>
     <div id="computer"></div>
     <div>
-        <button id="scissors">가위</button>
-        <button id="rock">바위</button>
-        <button id="paper">보</button>
+        <div>
+            <button id="scissors">가위</button>
+            <button id="rock">바위</button>
+            <button id="paper">보</button>
+            <button id="restart">다시하기</button>
+        </div>
+        <div id="statistics">
+            <div id="winLate">승률: 0 %</div>
+            <div id="log">전적: 0전 0승 0무 0패</div>
+        </div>
+        <div id="score"></div>
     </div>
-    <div id="score"></div>
-
+    
     <script src="./index.js"></script>
 </body>
 </html>
